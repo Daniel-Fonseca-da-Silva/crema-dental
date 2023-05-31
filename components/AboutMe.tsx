@@ -1,7 +1,74 @@
 import { superPreview } from "@/public/assets";
 import Image from "next/image";
+import { BsPatchCheckFill } from "react-icons/bs";
 
 const AboutMe = () => {
+  const items = [
+    {
+      id: 1,
+      text: "Agua.",
+    },
+    {
+      id: 2,
+      text: "Sorbitol: Es un alcohol extraído del azúcar que mantiene la humedad en el producto.",
+    },
+    {
+      id: 3,
+      text: "Sílice hidratada: Agente abrasivo que sirve para limpiar y dar brillo a los dientes.",
+    },
+    {
+      id: 4,
+      text: "Glicerina: Ayuda a disolver los ingredientes y a prevenir la sequedad o el endurecimiento, manteniendo el producto suave.",
+    },
+    {
+      id: 5,
+      text: "Propilenglicol: Es un humectante que mantiene el producto hidratado y también ayuda a disolver los diversos ingredientes.",
+    },
+    {
+      id: 6,
+      text: "Lauril sulfato de sodio: Agente que produce espuma para ayudar a distribuir el producto en la boca y eliminar los residuos de los alimentos.",
+    },
+    {
+      id: 7,
+      text: "Xilitol: Edulcorante natural presente en las fibras de las plantas.",
+    },
+    {
+      id: 8,
+      text: "PEG-8: Es una molécula formada por varias moléculas de polietilenglicol que actúa como humectante y solvente, controlando la viscosidad de la pasta de dientes.",
+    },
+    {
+      id: 9,
+      text: "Aroma: Tiene un aroma suave a mentol.",
+    },
+    {
+      id: 10,
+      text: "CI 77891: Dióxido de titanio, un colorante utilizado para dar el color blanco.",
+    },
+    {
+      id: 11,
+      text: "Goma de xantano: Espesante de origen natural.",
+    },
+    {
+      id: 12,
+      text: "Fluoruro de sodio: Molécula que proporciona iones de flúor.",
+    },
+    {
+      id: 13,
+      text: "Sacarina: Edulcorante que mejora el sabor.",
+    },
+    {
+      id: 14,
+      text: "Metilparabeno: Conservante que previene la formación de hongos, bacterias y otros microorganismos.",
+    },
+    {
+      id: 15,
+      text: "Propilparabeno: Conservante que previene la formación de hongos, bacterias y otros microorganismos.",
+    },
+    {
+      id: 15,
+      text: "Limoneno: Aromatizante cítrico de origen natural y solvente.",
+    },
+  ];
   return (
     <section className="w-full mx-auto py-10 mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4 mt-10">
       <div className="w-10/12 my-10">
@@ -20,19 +87,16 @@ const AboutMe = () => {
                 ingredientes
               </span>
             </h2>
-            <p className="lg:text-2xl xs:text-sm sm:text-lg xs:text-center font-bodyFont tracking-wide py-6">
-              Eu sou Enrico Ganchiel, Investidor no ramo de aplicações há mais
-              de uma década. Já prestei consultoria para dezenas de arrematantes
-              nas mais variadas questões de criptomoedas, leilões, e
-              planejamento patrimonial. O meu propósito é desmistificar e
-              democratizar o conhecimento sobre o mercado de criptomoedas, para
-              que mais pessoas possam ganhar dinheiro e aproveitar as diversas
-              oportunidades desse mercado. Atualmente, além de investir na
-              Binance, sou fundador da Escola do cripto+ e através do meu
-              método, já ensinei mais de 3.000 alunos a, mesmo sem experiência,
-              começar nesse mercado e comprarem suas primeiras moedas por meio
-              de aplicações.
-            </p>
+            <ul className="flex flex-col items-start">
+              {items.map((item) => (
+                <li key={item.id} className="flex items-center py-2">
+                  <BsPatchCheckFill className="text-btnColor1 mr-2" />
+                  <p className="font-bodyFont xs:text-xs sm:text-sm md:text-base lg:text-1xl text-textDark">
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
