@@ -1,6 +1,4 @@
 import {
-  depo1,
-  depo2,
   testimo0,
   testimo1,
   testimo2,
