@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const SecondContainer = () => {
   return (
@@ -55,14 +56,16 @@ const SecondContainer = () => {
           </div>
         </div>
       </div>
-      <motion.button
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="block w-2/5 h-14 my-10 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnColor1 to-btnColor2 hover:from-btnColor2 hover:to-btnColor1 font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnColor1 xs:h-20 uppercase"
-      >
-        Pónlo a prueba
-      </motion.button>
+      <Link href="https://wa.me/5524981579339" target="_blank">
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-full my-10 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnColor1 to-btnColor2 hover:from-btnColor2 hover:to-btnColor1 font-bold py-2 xs:px-5 sm:px-5 md:px-8 lg:px-40 animate-bounce border shadow-md shadow-btnColor1 xs:h-20 uppercase"
+        >
+          Pónlo a prueba
+        </motion.button>
+      </Link>
     </section>
   );
 };
