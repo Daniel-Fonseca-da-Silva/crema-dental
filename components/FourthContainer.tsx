@@ -34,6 +34,7 @@ const FourthContainer = () => {
           </div>
         </div>
       </div>
+      <div className="w-1/5 border border-t border-gray-700"></div>
     </section>
   );
 };
