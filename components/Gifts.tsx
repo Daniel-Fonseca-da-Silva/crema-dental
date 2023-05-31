@@ -1,5 +1,3 @@
-import { bonus1, bonus2, bonus3, bonus4 } from "@/public/assets";
-import Image from "next/image";
 import VideoPlayer from "./VideoPlayer";
 
 const Gifts = () => {
