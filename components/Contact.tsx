@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -16,9 +17,14 @@ const Contact = () => {
           <p className="xs:text-base sm:text-base md:text-lg lg:text-xl font-bodyFont tracking-wider py-6">
             Nuestro equipo está disponible para ayudarte.
           </p>
-          <button className="w-2/5 h-14 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnGreen to-btnGreen hover:from-btnColor2 hover:to-btnfrom-btnGreen font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnGreen uppercase xs:text-sm xs:h-20 xs:mt-5">
+          <Link href="https://wa.me/5524981579339" target="_blank">
+            <button className="w-full my-10 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnGreen to-btnGreen hover:from-btnColor2 hover:to-btnfrom-btnGreen font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnGreen xs:px-5 sm:px-5 md:px-8 lg:px-40 xs:h-20 uppercase">
+              Quiero saber más!
+            </button>
+          </Link>
+          {/* <button className="w-2/5 h-14 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnGreen to-btnGreen hover:from-btnColor2 hover:to-btnfrom-btnGreen font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnGreen uppercase xs:text-sm xs:h-20 xs:mt-5">
             Quiero saber más!
-          </button>
+          </button> */}
         </div>
       </motion.div>
     </section>
