@@ -1,6 +1,5 @@
-import { aboutme } from "@/public/assets";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -67,14 +66,20 @@ const Banner = () => {
           ¡Pruébala y sonríe!
         </span>
       </motion.p>
-      <motion.button
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="w-2/5 h-14 text-sm font-titleFont rounded-md text-textLight tracking-wide bg-gradient-to-r from-btnColor1 to-btnColor2 hover:from-btnColor2 hover:to-btnColor1 font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnColor1 xs:text-sm xs:h-20 xs:mt-5"
+      <Link
+        href="https://wa.me/5524981579339"
+        className="w-full"
+        target="_blank"
       >
-        QUIERO MI PASTA AHORA!
-      </motion.button>
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-2/5 h-14 text-sm font-titleFont rounded-md text-textLight tracking-wide bg-gradient-to-r from-btnColor1 to-btnColor2 hover:from-btnColor2 hover:to-btnColor1 font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnColor1 xs:text-sm xs:h-20 xs:mt-5"
+        >
+          QUIERO MI PASTA AHORA!
+        </motion.button>
+      </Link>
     </section>
   );
 };

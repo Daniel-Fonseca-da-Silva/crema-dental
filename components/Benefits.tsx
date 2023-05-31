@@ -1,4 +1,4 @@
-import { comocepillo, lucro, muitolucro, ninapequena } from "@/public/assets";
+import { comocepillo, ninapequena } from "@/public/assets";
 import Image from "next/image";
 
 const Benefits = () => {
